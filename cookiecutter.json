@@ -7,6 +7,6 @@
   "provider_name": "AWS",
   "provider_slug": "{{ cookiecutter.provider_name | lower | replace(' ', '') | replace('-', '_') }}",
   "provider_region": "us-east-1",
-  "environment_name": "production",
-  "environment_vpc_cidr": "10.10.0.0/16"
+  "terraform_module": "vpc",
+  "terraform_slug": "{{ cookiecutter.terraform_module | lower | replace(' ','') | replace('-', '_) }}"
 }

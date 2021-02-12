@@ -7,5 +7,3 @@ terragrunt = {
     path = "${find_in_parent_folders()}"
   }
 }
-
-cidr = "{{ cookiecutter.environment_vpc_cidr }}"
