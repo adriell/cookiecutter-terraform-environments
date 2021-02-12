@@ -8,4 +8,4 @@ terragrunt = {
   }
 }
 
-cidr = "{{ cookiecutter.environment_vpc_cidr }}"
+
