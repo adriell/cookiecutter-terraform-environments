@@ -1,1 +1,1 @@
-environment = "{{ cookiecutter.environment_name }}"
+environment = "prod"
