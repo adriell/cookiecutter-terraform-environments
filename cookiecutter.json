@@ -1,0 +1,12 @@
+{
+  "project_name": "Terraform Environments",
+  "project_slug": "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
+  "customer_name": "Cliente Exemplo",
+  "customer_slug": "{{ cookiecutter.customer_name | lower | replace(' ', '-') }}",
+  "customer_git_base_url": "github.com/{{ cookiecutter.customer_slug }}",
+  "provider_name": "AWS",
+  "provider_slug": "{{ cookiecutter.provider_name | lower | replace(' ', '') | replace('-', '_') }}",
+  "provider_region": "us-east-1",
+  "environment_name": "production",
+  "environment_vpc_cidr": "10.10.0.0/16"
+}
