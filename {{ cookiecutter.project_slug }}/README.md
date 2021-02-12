@@ -12,10 +12,10 @@ Formato:
     └── <ambiente>/                     # Nome do ambiente (staging, production, etc)
         ├── <região>/                   # Região do provider (us-east-1, eu-west-2, etc)
         │   ├── <blueprint>/            # Nome da blueprint (componente) do ambiente (vpc, rds-mysql, my-app, etc)
-        │   │   └── terraform.tfvars    # Configuração do componente (Terragrunt, repositório e variáveis da Blueprint, etc)
+        │   │   └── terragrunt.hcl      # Configuração do componente (Terragrunt, repositório e variáveis da Blueprint, etc)
         │   └── region.tfvars           # Variáveis comuns a *todas* as blueprints da *região*
         ├── account.tfvars              # Variáveis comuns a *todas* as blueprints do *ambiente*
-        └── terraform.tfvars            # Configuração do Terragrunt (bucket S3 do state, comandos extras, etc)
+        └── terragrunt.hcl              # Configuração do Terragrunt (bucket S3 do state, comandos extras, etc)
 ```
 
 Exemplo:

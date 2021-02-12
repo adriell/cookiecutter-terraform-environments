@@ -4,7 +4,7 @@ terragrunt = {
 
     config {
       encrypt        = true
-      bucket         = "{{ cookiecutter.customer_slug }}-tf-states-{{ cookiecutter.environment_name }}-${get_aws_account_id()}"
+      bucket         = "{{ cookiecutter.customer_slug }}-tf-states-{{ cookiecutter.environment_name }}-${get_aws_account_id()}-hom"
       key            = "${path_relative_to_include()}/terraform.tfstate"
       region         = "us-east-1"
       dynamodb_table = "terraform-locks-{{ cookiecutter.environment_name }}-${get_aws_account_id()}"
